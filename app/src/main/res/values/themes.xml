@@ -22,4 +22,7 @@
     <style name="Theme.Personal_CV.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.Personal_CV.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.TabViewPager"
+        parent="Theme.MaterialComponents.DayNight.DarkActionBar"/>
 </resources>
