@@ -1,14 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/common_margine"
+    android:background="@color/backgournd"
+    android:orientation="vertical"
     tools:context=".ui.main.About">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment2" />
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_margine"
 
-</FrameLayout>
+        android:orientation="vertical">
+
+        <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/title_margin_top"
+        android:text="@string/educational_background_t"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView3a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/title_margin_top"
+        android:text="@string/educational_background_title"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView3b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/educational_background_sub"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView3c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/educational_background_year"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView3a2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/title_margin_top"
+        android:text="@string/educational_background2_title"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView3b2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/educational_background2_sub"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView3c2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/educational_background2_year"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/textView211"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/title_margin_top"
+        android:text="@string/personal_info_t"
+        android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/personal_info"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/title_margin_top"
+            android:text="@string/weakness_t"
+            android:textSize="16sp" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="206dp"
+            android:layout_weight="1"
+            android:dividerHeight="1dp"
+            android:divider="#F6F6F6"
+            android:listSelector="#FFFFFF"
+            android:entries="@array/weakness" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/title_margin_top"
+            android:text="@string/strength_t"
+            android:textSize="16sp" />
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="263dp"
+            android:entries="@array/strength" />
+
+
+
+    </LinearLayout>
+</ScrollView>
