@@ -1,19 +1,14 @@
 package com.miu.aalemu.personal_cv
 
-import android.content.Context
 import android.os.Bundle
-import android.util.AttributeSet
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
-import com.google.android.material.tabs.TabLayout
-import androidx.viewpager.widget.ViewPager
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import android.view.Menu
-import android.view.MenuItem
-import android.view.View
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.google.android.material.tabs.TabLayoutMediator
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
+import com.miu.aalemu.personal_cv.data.CommonData
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -29,9 +24,7 @@ class MainActivity : AppCompatActivity() {
         viewpager.adapter = adapter
 
 
-//        fmanager = supportFragmentManager
-//        tx = fmanager.beginTransaction();
-//        tx.add(R.id.frame_view, BlankFragment())
+
 
         TabLayoutMediator(tlayaout,viewpager){tab,position->
             when(position){

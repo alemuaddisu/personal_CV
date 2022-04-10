@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/card_pertanyaan"
     android:layout_width="match_parent"
-    android:layout_height="96dp"
+    android:layout_height="wrap_content"
     android:layout_marginLeft="16dp"
     android:layout_marginTop="12dp"
     android:layout_marginRight="16dp"
@@ -19,7 +19,7 @@
 
 
     <TextView
-        android:id="@+id/kodePertanyaan"
+        android:id="@+id/titleView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/strength_t"
@@ -30,26 +30,28 @@
         card_view:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/kategori"
+        android:id="@+id/detailView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="end|center_vertical"
         android:text="@string/fab_transformation_sheet_behavior"
+        android:textAlignment="viewStart"
         android:textColor="@color/black"
         android:textSize="12sp"
         card_view:layout_constraintStart_toStartOf="parent"
-        card_view:layout_constraintTop_toBottomOf="@+id/kodePertanyaan" />
+        card_view:layout_constraintTop_toBottomOf="@+id/titleView" />
 
 
     <TextView
-        android:id="@+id/isiPertanyaan"
+        android:id="@+id/footerView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="top"
         android:text="@string/fab_transformation_sheet_behavior"
+        android:textAlignment="viewStart"
         android:textSize="10sp"
-        card_view:layout_constraintEnd_toEndOf="parent"
-        card_view:layout_constraintTop_toBottomOf="@+id/kategori" />
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/detailView" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

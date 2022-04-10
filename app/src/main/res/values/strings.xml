@@ -1,14 +1,7 @@
 <resources>
-    <string name="app_name">Personal_CV</string>
-    <string name="tab_text_1">Me</string>
-    <string name="tab_text_2">Tab 2</string>
-    <string name="tab_text_3">Tab 3</string>
-    <string name="tab_text_4">Tab 4</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment1">Hello blank Home</string>
-    <string name="hello_blank_fragment2">Hello blank about</string>
-    <string name="hello_blank_fragment3">Hello blank work</string>
-    <string name="hello_blank_fragment4">Hello blank contac</string>
+    <string name="app_name">Addisu Alemu (CV)</string>
+    <string name="short_qualification">Software Engineer</string>
+
 
     <string name="qualification">Talented Software Engineer with 5 years of hands-on experience in leading projects through all phases of software development life cycle while improving quality and performance. Effective team leader who evaluates and analyzes requirements to ensure projects meet customer requirements and needs. Skilled in implementing technologies such as Java, Apache, Tomcat, Angular, Bootstrap, MySQL, Postgre, Eclipse, IntelliJ, NetBeans, and Atom Spring and Hibernate.Talented Software Engineer with 5 years of hands-on experience in leading projects through all phases of software development life cycle while improving quality and performance. Effective team leader who evaluates and analyzes requirements to ensure projects meet customer requirements and needs. Skilled in implementing technologies such as Java, Apache, Tomcat, Angular, Bootstrap, MySQL, Postgre, Eclipse, IntelliJ, NetBeans, and Atom Spring and Hibernate.</string>
     <string name="profile_picture">profile picture</string>

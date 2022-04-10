@@ -9,4 +9,5 @@
     <dimen name="common_margine">20dp</dimen>
     <dimen name="title_margin_top">31dp</dimen>
     <dimen name="list_margin_top">21</dimen>
+    <dimen name="listview_height">160dp</dimen>
 </resources>
