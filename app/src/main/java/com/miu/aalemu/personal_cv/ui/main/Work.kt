@@ -4,11 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ListView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.miu.aalemu.personal_cv.R
+import com.miu.aalemu.personal_cv.util.getDataFromJson
 import kotlinx.android.synthetic.main.fragment_work.*
 import kotlinx.android.synthetic.main.fragment_work.view.*
 
@@ -48,18 +48,25 @@ class Work : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        return inflater.inflate(R.layout.fragment_work_new, container, false)
+        return inflater.inflate(R.layout.fragment_work, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        recycler_view.apply {
-            // set a LinearLayoutManager to handle Android
-            // RecyclerView behavior
+
+        recycler_view2.apply {
             layoutManager = LinearLayoutManager(activity)
-            // set the custom adapter to the RecyclerView
-            adapter = RecyclerAdapter()
+            adapter = RecyclerAdapter(getDataFromJson(view.context,"common"),3)
         }
+        recycler_view3.apply {
+            layoutManager = LinearLayoutManager(activity)
+            adapter = RecyclerAdapter(getDataFromJson(view.context,"common"),2)
+        }
+        recycler_view4.apply {
+            layoutManager = LinearLayoutManager(activity)
+            adapter = RecyclerAdapter(getDataFromJson(view.context,"common"),1)
+        }
+
     }
 
 

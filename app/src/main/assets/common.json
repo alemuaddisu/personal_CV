@@ -1,0 +1,95 @@
+[
+  {
+    "id": "212",
+    "title": "Senior Software Engineer",
+    "detail": "Tana Express information service · Full-time",
+    "footer": "Jun 2015 - Nov 2020",
+    "type": "1"
+  },
+  {
+    "id": "213",
+    "title": "Assistant LecturerAssistant",
+    "detail": "Bahir Dar University · Full-time",
+    "footer": "Aug 2014 - Jun 2015 ",
+    "type": "1"
+  },
+  {
+    "id": "211",
+    "title": "Software Engineer",
+    "detail": "G2O IT Services and IT Consulting · Full-time",
+    "footer": "Oct 2021 - present ",
+    "type": "1"
+  },
+
+
+  {
+    "id": "111",
+    "title": "Maharishi International University",
+    "detail": "Master of Science - MS, Computer ScienceMaster of Science",
+    "footer": "Feb 2021 - Oct 2023",
+    "type": "0"
+  },
+  {
+    "id": "112",
+    "title": "Bahir Dar University",
+    "detail": "Bachelor of Science - BSc, Computer Science, and Engineering",
+    "footer": "Jun 2017 - Augest 2018",
+    "type": "0"
+  },
+  {
+    "id": "311",
+    "title": "Spring Framework",
+    "detail": "Spring provides everything required beyond the Java programming language for creating enterprise applications for a wide range of scenarios and architectures.",
+    "footer": "3 years experiance",
+    "type": "2"
+  },
+  {
+    "id": "312",
+    "title": "Object-Oriented Programming (OOP)",
+    "detail": "Object-oriented programming (OOP) is a computer programming model that organizes software design around data, or objects, rather than functions and logic. An object can be defined as a data field that has unique attributes and behavior.",
+    "footer": "5 years experiance",
+    "type": "2"
+  },
+  {
+    "id": "313",
+    "title": "Software Architecture",
+    "detail": "Software architecture is, simply, the organization of a system. This organization includes all components, how they interact with each other, the environment in which they operate, and the principles used to design the software.",
+    "footer": "1 year experiance",
+    "type": "2"
+  },
+  {
+    "id": "314",
+    "title": "Web Development",
+    "detail": "Web development is the work involved in developing a website for the Internet or an intranet. ",
+    "footer": "5 years experance ",
+    "type": "2"
+  },
+  {
+    "id": "411",
+    "title": "WebStore Application, MIU (2021)",
+    "detail": "Developed simple webstore application using Spring REST as backend and React as frontend.  ",
+    "footer": "Technologies Used: JavaScript, HTML, CSS, Bootstrap, jQuery, TypeScript, Ajax, Spring REST, React, MongoDB.",
+    "type": "3"
+  },
+  {
+    "id": "412",
+    "title": "Flight Reservation System, MIU (2021)",
+    "detail": "Designed Spring and Hibernate-based API system for flight reservation system.",
+    "footer": "Technologies Used: Web Service, REST, Microservice. ",
+    "type": "3"
+  },{
+  "id": "413",
+  "title": "Flight Reservation System, MIU (2021):  ",
+  "detail": "Designed Spring and Hibernate-based API system for flight reservation system.",
+  "footer": "Technologies Used: Web Service, REST, Microservice. ",
+  "type": "3"
+},
+  {
+    "id": "414",
+    "title": "Assessment Administration and Certification Information Management System ",
+    "detail": "Developed web-based system to automate candidate registration and certification process. Managed project through all phases of software development life cycle.",
+    "footer": "Technologies Used: PHP, JavaScript, MySQL, MS Visio, Atom, Android Studio, HTML, CSS, Bootstrap, jQuery, AJAX.",
+    "type": "3"
+  }
+
+]

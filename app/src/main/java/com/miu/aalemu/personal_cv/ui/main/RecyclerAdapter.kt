@@ -1,57 +1,46 @@
 package com.miu.aalemu.personal_cv.ui.main
 
-import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 import com.miu.aalemu.personal_cv.R
+import com.miu.aalemu.personal_cv.data.CommonData
 
-class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
+class RecyclerAdapter(private val commonDataList:List<CommonData>, private val ind: Int): RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
-    private val kode = arrayOf("d116df5",
-        "36ffc75", "f5cfe78", "5b87628",
-        "db8d14e", "9913dc4", "e120f96",
-        "466251b")
-
-    private val kategori = arrayOf("Kekayaan", "Teknologi",
-        "Keluarga", "Bisnis",
-        "Keluarga", "Hutang",
-        "Teknologi", "Pidana")
-
-    private val isi = arrayOf("pertanyaan 9",
-        "pertanyaan 11", "pertanyaan 17", "test forum",
-        "pertanyaan 12", "pertanyaan 18", "pertanyaan 20",
-        "pertanyaan 21")
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): ViewHolder {
         val v = LayoutInflater.from(viewGroup.context)
             .inflate(R.layout.reusable_layout, viewGroup, false)
-        return ViewHolder(v)
+ return ViewHolder(v)
     }
 
     override fun onBindViewHolder(viewHolder: ViewHolder, i: Int) {
-        viewHolder.itemKode.text = kode[i]
-        viewHolder.itemKategori.text = kategori[i]
-        viewHolder.itemIsi.text = isi[i]
+        viewHolder.itemTitle.text = commonDataList.filter{it.type==ind}.get(i).title
+        viewHolder.itemDetail.text = commonDataList.filter{it.type==ind}.get(i).detail
+        viewHolder.itemFooter.text = commonDataList.filter{it.type==ind}.get(i).footer
 
     }
 
     override fun getItemCount(): Int {
-        return kode.size
+        return commonDataList.filter{it.type==ind}.size
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        var itemKode: TextView
-        var itemKategori: TextView
-        var itemIsi: TextView
+        var itemTitle: TextView
+        var itemDetail: TextView
+        var itemFooter: TextView
 
         init {
-            itemKode = itemView.findViewById(R.id.kodePertanyaan)
-            itemKategori = itemView.findViewById(R.id.kategori)
-            itemIsi = itemView.findViewById(R.id.isiPertanyaan)
+            itemTitle = itemView.findViewById(R.id.titleView)
+            itemDetail = itemView.findViewById(R.id.detailView)
+            itemFooter = itemView.findViewById(R.id.footerView)
 
             itemView.setOnClickListener {
                 var position: Int = getAdapterPosition()
