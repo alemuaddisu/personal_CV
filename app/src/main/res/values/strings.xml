@@ -68,7 +68,9 @@
     <string name="create">Create new account</string>
     <string name="forgot_password">forgot password?</string>
     <string name="contact_me">Contact Me ...</string>
-    <string name="location">IT Services and IT Consulting Dublin, OH</string>
+    <string name="location">G2O, IT Services and IT Consulting Dublin, OH</string>
+    <string name="email_t">email</string>
+    <string name="register_tittle">Create account</string>
 
 
 </resources>
