@@ -6,7 +6,7 @@
     <string name="qualification">Talented Software Engineer with 5 years of hands-on experience in leading projects through all phases of software development life cycle while improving quality and performance. Effective team leader who evaluates and analyzes requirements to ensure projects meet customer requirements and needs. Skilled in implementing technologies such as Java, Apache, Tomcat, Angular, Bootstrap, MySQL, Postgre, Eclipse, IntelliJ, NetBeans, and Atom Spring and Hibernate.Talented Software Engineer with 5 years of hands-on experience in leading projects through all phases of software development life cycle while improving quality and performance. Effective team leader who evaluates and analyzes requirements to ensure projects meet customer requirements and needs. Skilled in implementing technologies such as Java, Apache, Tomcat, Angular, Bootstrap, MySQL, Postgre, Eclipse, IntelliJ, NetBeans, and Atom Spring and Hibernate.</string>
     <string name="profile_picture">profile picture</string>
     <string name="position">Software Engineer</string>
-<!--    titles-->
+    <!--    titles-->
     <string name="educational_background_t">Educational Backgoround</string>
     <string name="personal_info_t">Personal Information</string>
     <string name="strength_t">Strength</string>
@@ -17,7 +17,7 @@
     <string name="address_t">Address</string>
 
 
-<!--    values-->
+    <!--    values-->
     <string name="educational_background_title">Maharishi International University</string>
     <string name="educational_background_sub">MSc. computer science </string>
     <string name="educational_background_year">Feb 2021 - Oct 2023</string>
@@ -42,27 +42,32 @@
     <string-array name="strength">
         <item name="strans">Strength 1</item>
         <item name="sdfs">Strength 2</item>
-        <item >Strength 3</item>
-        <item >Strength 4</item>
+        <item>Strength 3</item>
+        <item>Strength 4</item>
     </string-array>
 
     <string-array name="weakness">
-        <item >Weakness</item>
-        <item >Weakness</item>
-        <item >Weakness</item>
+        <item>Weakness</item>
+        <item>Weakness</item>
+        <item>Weakness</item>
     </string-array>
 
 
-    <string name="address">3896 Alwood ln</string>
+    <string name="address">3896 Alwood Ln</string>
     <string name="address2">Groveport, OH</string>
     <string name="phone">+ 1 (571) 331 2578</string>
     <string name="email">addisudalemu@gmail.com</string>
     <string name="also_find_me">Also find me on ...</string>
     <string name="fb_link">https://www.facebook.com/addisu.damena/</string>
     <string name="tweeter_link">https://twitter.com/DamenaAddisu</string>
-    <string name="linkedin_link">https://www.linkedin.com/in/addisu-alemu/details/education/</string>
+    <string name="linkedin_link">https://www.linkedin.com/in/addisu-alemu/</string>
     <string name="youtube_line">https://www.youtube.com/channel/UCNVA4zp0op9wuAA5Q3J7Nlg</string>
-
+    <string name="app_name_long">Addisu Alemu CV</string>
+    <string name="password">password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="create">Create new account</string>
+    <string name="forgot_password">forgot password?</string>
+    <string name="contact_me">Contact Me ...</string>
 
 
 </resources>
