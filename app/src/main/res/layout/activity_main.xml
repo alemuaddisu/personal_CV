@@ -7,21 +7,14 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/text_margin"
-            android:text="@string/app_name"
-            android:textColor="@color/backgournd"
-            android:textSize="20sp" />
-
-    </com.google.android.material.appbar.AppBarLayout>
-
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        app:menu="@menu/mainmenu"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/white" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tlayaout"
@@ -32,9 +25,8 @@
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="@dimen/common_margine" >
+        android:layout_margin="@dimen/common_margine" />
 
-    </androidx.viewpager2.widget.ViewPager2>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
