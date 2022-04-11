@@ -17,10 +17,10 @@ class MyAdapter (fm:FragmentManager, lc:Lifecycle): FragmentStateAdapter(fm,lc){
 
     override fun createFragment(position: Int): Fragment {
       return  when(position) {
-          0 -> Home()
+          3 -> Home()
           1 -> About()
           2 -> Work()
-          3 -> Contact()
+          0 -> Contact()
           else -> Fragment()
       }
     }

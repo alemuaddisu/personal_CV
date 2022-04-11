@@ -1,9 +1,11 @@
 package com.miu.aalemu.personal_cv.ui.main
 
 import android.os.Bundle
+import android.view.ContextMenu
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -65,9 +67,19 @@ class Work : Fragment() {
         recycler_view4.apply {
             layoutManager = LinearLayoutManager(activity)
             adapter = RecyclerAdapter(getDataFromJson(view.context,"common"),1)
+            //registerForContextMenu(recycler_view2)
         }
 
     }
 
+//    override fun onCreateContextMenu(
+//        menu: ContextMenu,
+//        v: View,
+//        menuInfo: ContextMenu.ContextMenuInfo?
+//    ) {
+//        super.onCreateContextMenu(menu, v, menuInfo)
+//        menu!!.setHeaderTitle("Select action")
+//        //Toast.makeText(applicationContext, "$item menu selected", Toast.LENGTH_LONG).show()
+//    }
 
 }
