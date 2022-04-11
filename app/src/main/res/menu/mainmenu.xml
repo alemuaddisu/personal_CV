@@ -2,11 +2,17 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item
-        android:id="@+id/app_bar_search"
-        android:icon="@drawable/search"
-        android:title="Search"
-        app:actionViewClass="android.widget.SearchView" ></item>
-    <item android:title="Item" />
-    <item android:title="Item" />
+    <item android:id="@+id/m_home"
+            android:title="Home"
+            android:icon="@drawable/home"
+            app:showAsAction="always"/>
+    <item android:id="@+id/m_about"
+        android:title="About"
+        android:icon="@drawable/about_me" />
+    <item android:id="@+id/m_work"
+        android:title="Work"
+        android:icon="@drawable/work" />
+    <item android:id="@+id/m_contact"
+        android:title="Contact"
+        android:icon="@drawable/contact_me" />
 </menu>
