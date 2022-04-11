@@ -20,7 +20,7 @@ class RecyclerAdapter(private val commonDataList:List<CommonData>, private val i
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): ViewHolder {
         val v = LayoutInflater.from(viewGroup.context)
-            .inflate(R.layout.reusable_layout, viewGroup, false)
+            .inflate(R.layout.rusable_card_layout, viewGroup, false)
  return ViewHolder(v)
     }
 

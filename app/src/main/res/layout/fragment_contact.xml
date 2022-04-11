@@ -10,107 +10,125 @@
     tools:context=".ui.main.Contact">
 
 
-    <LinearLayout
-        android:id="@+id/addressView"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
         <TextView
             android:id="@+id/textView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/title_margin_top"
             android:text="@string/address_t"
-            android:textSize="16sp" />
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/address"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView1"
+            tools:layout_editor_absoluteX="-8dp" />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/phone"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:layout_editor_absoluteX="4dp" />
 
         <TextView
             android:id="@+id/textView12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/title_margin_top"
             android:text="@string/email"
-            android:textSize="16sp" />
-    </LinearLayout>
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="bottom"
+            android:text="@string/also_find_me"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/textView12"
+            tools:layout_editor_absoluteX="-3dp" />
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/title_margin_top"
-        android:foregroundGravity="bottom"
-        android:text="@string/also_find_me"
-        android:textSize="16sp" />
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
-    <WebView
-        android:id="@+id/webView"
-        android:layout_width="match_parent"
-        android:layout_height="364dp" />
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="84dp"
+                android:layout_gravity="bottom"
+                android:layout_margin="@dimen/fab_margin"
+                android:layout_weight="1"
+                android:contentDescription="@string/fb_link"
+                android:onClick="navigate"
+                android:src="@drawable/fb" />
 
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="wrap_content"
-            android:layout_height="84dp"
-            android:layout_gravity="bottom"
-            android:layout_margin="@dimen/fab_margin"
-            android:layout_weight="1"
-            android:contentDescription="@string/fb_link"
-            android:src="@drawable/fb"
-            android:onClick="navigate"/>
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="84dp"
+                android:layout_gravity="bottom"
+                android:layout_margin="@dimen/fab_margin"
+                android:layout_weight="1"
+                android:contentDescription="@string/linkedin_link"
+                android:onClick="navigate"
+                android:src="@drawable/linkedin" />
 
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="wrap_content"
-            android:layout_height="84dp"
-            android:layout_gravity="bottom"
-            android:layout_margin="@dimen/fab_margin"
-            android:layout_weight="1"
-            android:contentDescription="@string/linkedin_link"
-            android:src="@drawable/linkedin"
-            android:onClick="navigate"/>
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="84dp"
+                android:layout_gravity="bottom"
+                android:layout_margin="@dimen/fab_margin"
+                android:layout_weight="1"
+                android:contentDescription="@string/tweeter_link"
+                android:onClick="navigate"
+                android:src="@drawable/tweeter" />
 
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="wrap_content"
-            android:layout_height="84dp"
-            android:layout_gravity="bottom"
-            android:layout_margin="@dimen/fab_margin"
-            android:layout_weight="1"
-            android:contentDescription="@string/tweeter_link"
-            android:src="@drawable/tweeter"
-            android:onClick="navigate"/>
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="84dp"
+                android:layout_gravity="bottom"
+                android:layout_margin="@dimen/fab_margin"
+                android:layout_weight="1"
+                android:contentDescription="@string/youtube_line"
+                android:onClick="navigate"
+                android:src="@drawable/youtube" />
 
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="wrap_content"
-            android:layout_height="84dp"
-            android:layout_gravity="bottom"
-            android:layout_margin="@dimen/fab_margin"
-            android:layout_weight="1"
-            android:contentDescription="@string/youtube_line"
-            android:src="@drawable/youtube"
-            android:onClick="navigate"/>
+        </LinearLayout>
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

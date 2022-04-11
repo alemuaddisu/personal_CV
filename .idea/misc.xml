@@ -6,7 +6,7 @@
         <entry key="app/src/main/res/drawable/home.xml" value="0.166" />
         <entry key="app/src/main/res/drawable/work.xml" value="0.225" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.2421875" />
         <entry key="app/src/main/res/layout/activity_main3.xml" value="0.3481941309255079" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.1" />
@@ -26,8 +26,10 @@
         <entry key="app/src/main/res/layout/reusable.xml" value="0.36666666666666664" />
         <entry key="app/src/main/res/layout/reusable_card_layout.xml" value="0.196875" />
         <entry key="app/src/main/res/layout/reusable_layout.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/rusable_card_layout.xml" value="0.2828125" />
         <entry key="app/src/main/res/menu/mainmanu.xml" value="0.2421875" />
         <entry key="app/src/main/res/menu/mainmenu.xml" value="0.2994791666666667" />
+        <entry key="app/src/main/res/menu/popupmenu.xml" value="0.1765625" />
       </map>
     </option>
   </component>
