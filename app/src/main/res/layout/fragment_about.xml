@@ -5,79 +5,88 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="@dimen/common_margine"
-    android:background="@color/backgournd"
+    android:background="@color/white"
     android:orientation="vertical"
     tools:context=".ui.main.About">
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="end"
         android:orientation="vertical">
 
+
         <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/title_margin_top"
-        android:text="@string/educational_background_t"
-        android:textSize="16sp" />
-
-    <TextView
-        android:id="@+id/textView3a"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/title_margin_top"
-        android:text="@string/educational_background_title"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/textView3b"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/educational_background_sub"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/textView3c"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/educational_background_year"
-        android:textSize="14sp" />
-
-    <TextView
-        android:id="@+id/textView3a2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/title_margin_top"
-        android:text="@string/educational_background2_title"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/textView3b2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/educational_background2_sub"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/textView3c2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/educational_background2_year"
-        android:textSize="14sp" />
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/title_margin_top"
+            android:text="@string/educational_background_t"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
 
 
-    <TextView
-        android:id="@+id/textView211"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/title_margin_top"
-        android:text="@string/personal_info_t"
-        android:textSize="16sp" />
+        <TextView
+            android:id="@+id/textView3a"
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/title_margin_top"
+            android:text="@string/educational_background_title"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView3b"
+            android:layout_width="334dp"
+            android:layout_height="wrap_content"
+            android:text="@string/educational_background_sub"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView3c"
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:text="@string/educational_background_year"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView3a2"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/title_margin_top"
+            android:text="@string/educational_background2_title"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView3b2"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:text="@string/educational_background2_sub"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView3c2"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:text="@string/educational_background2_year"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/textView211"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/title_margin_top"
+            android:text="@string/personal_info_t"
+            android:textColor="@color/black"
+            android:textSize="28sp"  />
 
         <TextView
             android:id="@+id/textView1"
-            android:layout_width="match_parent"
+            android:layout_width="338dp"
+            android:layout_marginTop="@dimen/title_margin_top"
             android:layout_height="wrap_content"
             android:text="@string/personal_info"
             android:textSize="20sp" />
@@ -88,16 +97,17 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/title_margin_top"
             android:text="@string/weakness_t"
-            android:textSize="16sp" />
+            android:textColor="@color/black"
+            android:textSize="28sp" />
 
         <ListView
             android:layout_width="match_parent"
-            android:layout_height="206dp"
+            android:layout_height="208dp"
             android:layout_weight="1"
-            android:dividerHeight="1dp"
             android:divider="#F6F6F6"
-            android:listSelector="#FFFFFF"
-            android:entries="@array/weakness" />
+            android:dividerHeight="1dp"
+            android:entries="@array/weakness"
+            android:listSelector="#FFFFFF" />
 
         <TextView
             android:id="@+id/textView21"
@@ -105,14 +115,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/title_margin_top"
             android:text="@string/strength_t"
-            android:textSize="16sp" />
+            android:textColor="@color/black"
+            android:textSize="28sp"  />
 
 
         <ListView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="263dp"
             android:entries="@array/strength" />
-
 
 
     </LinearLayout>
