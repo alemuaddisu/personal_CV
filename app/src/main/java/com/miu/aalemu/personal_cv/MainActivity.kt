@@ -2,6 +2,7 @@ package com.miu.aalemu.personal_cv
 
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
@@ -20,32 +21,33 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_main)
-        val adapter = MyAdapter(supportFragmentManager,lifecycle)
-        viewpager.adapter = adapter
-
-
-
-
-        TabLayoutMediator(tlayaout,viewpager){tab,position->
-            when(position){
-                0->{
-                    tab.text="Home"
-                    tab.setIcon(R.drawable.home)
-                }
-                1->{
-                    tab.text="About Me"
-                    tab.setIcon(R.drawable.about_me)
-                }
-                2->{
-                tab.text="Work"
-                tab.setIcon(R.drawable.work)
-                }
-                3->{
-                    tab.text="Contact"
-                    tab.setIcon(R.drawable.contact_me)
-                }
-            }
-        }.attach()
+//
+//        val adapter = MyAdapter(supportFragmentManager,lifecycle)
+//        viewpager.adapter = adapter
+//
+//
+//
+//
+//        TabLayoutMediator(tlayaout,viewpager){tab,position->
+//            when(position){
+//                0->{
+//                    tab.text="Home"
+//                    tab.setIcon(R.drawable.home)
+//                }
+//                1->{
+//                    tab.text="About Me"
+//                    tab.setIcon(R.drawable.about_me)
+//                }
+//                2->{
+//                tab.text="Work"
+//                tab.setIcon(R.drawable.work)
+//                }
+//                3->{
+//                    tab.text="Contact"
+//                    tab.setIcon(R.drawable.contact_me)
+//                }
+//            }
+//        }.attach()
 
 //        binding = ActivityMainBinding.inflate(layoutInflater)
 //        setContentView(binding.root)
@@ -61,5 +63,10 @@ class MainActivity : AppCompatActivity() {
 //            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
 //                .setAction("Action", null).show()
 //        }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.mainmenu,menu)
+        return super.onCreateOptionsMenu(menu)
     }
 }
