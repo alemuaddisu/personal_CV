@@ -8,6 +8,7 @@ import android.webkit.WebViewClient
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.PopupMenu
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.google.android.material.tabs.TabLayoutMediator
@@ -28,7 +29,36 @@ class MainActivity : AppCompatActivity() {
         val adapter = MyAdapter(supportFragmentManager, lifecycle)
         viewpager.adapter = adapter
 
+        toolbar.setOnClickListener(object:View.OnClickListener{
+            override fun onClick(view:View) {
+                // Initialize a new instance of popup menu with the UI Component
+                val popupMenu = PopupMenu(this@MainActivity.applicationContext, toolbar)
+//             Inflate the popup menu
+                popupMenu.getMenuInflater().inflate(R.menu.popupmenu, popupMenu.getMenu())
 
+//                popupMenu.setOnMenuItemClickListener( object:PopupMenu.OnMenuItemClickListener {
+//                    override fun onMenuItemClick(menuItem:MenuItem): Boolean {
+//                        when (menuItem.getItemId()) {
+//                        // Handle the menu items here
+////                        R.id.m11 -> {
+////// Set the text color to red tv.setTextColor(Color.RED)
+////                          return true
+////                        }
+//                        R.id.m1 -> {
+//                            toolbar.title ="the were title"
+//                        return true }
+////                        R.id.m21 -> {
+////// Set the text color to blue
+////                            toolbar.title ="the title"
+////                            return true
+////                    }
+//                        else -> return false
+//                    } }
+//                     })
+                popupMenu.show()
+            }
+        }
+        )
 
 
         TabLayoutMediator(tlayaout, viewpager) { tab, position ->
