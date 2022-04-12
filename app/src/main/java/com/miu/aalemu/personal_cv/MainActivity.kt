@@ -55,20 +55,7 @@ class MainActivity : AppCompatActivity() {
             }
         }.attach()
 
-//        binding = ActivityMainBinding.inflate(layoutInflater)
-//        setContentView(binding.root)
-//
-//        val sectionsPagerAdapter = SectionsPagerAdapter(this, supportFragmentManager)
-//        val viewPager: ViewPager = binding.viewPager
-//        viewPager.adapter = sectionsPagerAdapter
-//        val tabs: TabLayout = binding.tabs
-//        tabs.setupWithViewPager(viewPager)
-//        val fab: FloatingActionButton = binding.fab
-//
-//        fab.setOnClickListener { view ->
-//            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                .setAction("Action", null).show()
-//        }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -89,24 +76,5 @@ class MainActivity : AppCompatActivity() {
         webView.loadUrl("" + imgView.contentDescription)
     }
 
-//    private fun showCustomDialog() {
-//        val dialogBinding: LayCustomDialogBinding? =
-//            DataBindingUtil.inflate(
-//                LayoutInflater.from(this),
-//                R.layout.lay_custom_dialog,
-//                null,
-//                false
-//            )
-//
-//        val customDialog = AlertDialog.Builder(this, 0).create()
-//
-//        customDialog.apply {
-//            setView(dialogBinding?.root)
-//            setCancelable(false)
-//        }.show()
-//
-//        dialogBinding?.btnOk?.setOnClickListener {
-//            customDialog.dismiss()
-//        }
-//    }
+
 }

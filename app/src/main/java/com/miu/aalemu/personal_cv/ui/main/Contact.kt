@@ -1,5 +1,7 @@
 package com.miu.aalemu.personal_cv.ui.main
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.ContextMenu
 import androidx.fragment.app.Fragment
@@ -38,19 +40,38 @@ class Contact : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-//        registerForContextMenu(addressView)
         return inflater.inflate(R.layout.fragment_contact, container, false)
     }
 
-//    override fun onCreateContextMenu(
-//        menu: ContextMenu,
-//        v: View,
-//        menuInfo: ContextMenu.ContextMenuInfo?
-//    ) {
-//        super.onCreateContextMenu(menu, v, menuInfo)
-//        menu!!.setHeaderTitle("Select action")
-//        //Toast.makeText(applicationContext, "$item menu selected", Toast.LENGTH_LONG).show()
-//    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        email.setOnClickListener{
+            val intent = Intent(Intent.ACTION_SEND)
+            intent.type = "text/plain"
+            intent.putExtra(Intent.EXTRA_EMAIL, arrayOf("addisudalemu@gmail.com"))
+            intent.putExtra(Intent.EXTRA_SUBJECT, "Your Username and Password")
+            if (context?.let { it1 -> intent.resolveActivity(it1.packageManager) } != null) {
+                startActivity(intent)
+            }
+        }
+        explore.setOnClickListener{
+            val gmmIntentUri = Uri.parse("geo:39.8955452,-82.8883961")
+            val mapIntent = Intent(Intent.ACTION_VIEW,gmmIntentUri)
+            val dialIntent = Intent(Intent.ACTION_DIAL)
+            startActivity(mapIntent)
+
+        }
+        call.setOnClickListener{
+           val dialIntent = Intent(Intent.ACTION_DIAL)
+
+            dialIntent.data = Uri.parse("tel:" + "5713312578")
+
+              startActivity(dialIntent)
+
+        }
+
+
+    }
 
 }

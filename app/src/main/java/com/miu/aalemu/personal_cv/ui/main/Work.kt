@@ -19,6 +19,8 @@ import com.miu.aalemu.personal_cv.util.getDataFromJson
 import com.miu.aalemu.personal_cv.util.getJsonDataFromAsset
 import kotlinx.android.synthetic.main.fragment_work.*
 import kotlinx.android.synthetic.main.fragment_work.view.*
+import kotlinx.android.synthetic.main.layout_dialogue.*
+import kotlinx.android.synthetic.main.layout_dialogue.view.*
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -101,8 +103,11 @@ class Work : Fragment() {
 
         dialogBinding?.btnOk?.setOnClickListener {
             val currentData:ArrayList<CommonData> = getDataFromJson(context,"common") as ArrayList<CommonData>
-            currentData.add(CommonData("111","Then new data","the new detail is here","the new footer",2))
-            recycler_view2.apply {
+            currentData.add(CommonData("111"
+                                ,dialogBinding?.newtitleView.text.toString()
+                                ,dialogBinding?.newdetailView.text.toString()
+                                ,dialogBinding?.newfooterView.text.toString(),2))
+            recycler_view3.apply {
                 layoutManager = LinearLayoutManager(activity)
                 adapter = RecyclerAdapter(currentData, 2)
                 customDialog.dismiss()

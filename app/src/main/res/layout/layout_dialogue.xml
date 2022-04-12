@@ -52,7 +52,7 @@
                 android:hint="@string/new_title">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/editTextTextEmailAddress"
+                    android:id="@+id/newtitleView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -67,7 +67,7 @@
                 tools:layout_editor_absoluteX="4dp">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/newtitleView"
+                    android:id="@+id/newdetailView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -79,7 +79,7 @@
                 android:hint="@string/new_footer">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/newdetailView"
+                    android:id="@+id/newfooterView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
             </com.google.android.material.textfield.TextInputLayout>

@@ -40,16 +40,15 @@
     <string name="personal_info">Talented Software Engineer with 5 years of hands-on experience in leading projects through all phases of software development life cycle while improving quality and performance. Effective team leader who evaluates and analyzes requirements to ensure projects meet customer requirements and needs. Skilled in implementing technologies such as Java, Apache, Tomcat, Angular, Bootstrap, MySQL, Postgre, Eclipse, IntelliJ, NetBeans, and Atom Spring and Hibernate.</string>
 
     <string-array name="strength">
-        <item name="strans">Strength 1</item>
-        <item name="sdfs">Strength 2</item>
-        <item>Strength 3</item>
-        <item>Strength 4</item>
+        <item name="strans">Communication Skill</item>
+        <item name="sdfs">Good work ethics</item>
+        <item>Problem solving skill</item>
+        <item>Cooperation with others</item>
     </string-array>
 
     <string-array name="weakness">
-        <item>Weakness</item>
-        <item>Weakness</item>
-        <item>Weakness</item>
+        <item>Time estimation </item>
+        <item>Cost estimation</item>
     </string-array>
 
 
