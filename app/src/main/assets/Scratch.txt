@@ -1,5 +1,0 @@
- if (savedInstanceState == null) {
-
-       }
-
- make phone callable
