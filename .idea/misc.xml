@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/home.xml" value="0.166" />
+        <entry key="app/src/main/res/drawable/ic_baseline_add_circle_outline_24.xml" value="0.3435" />
         <entry key="app/src/main/res/drawable/work.xml" value="0.225" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
@@ -22,6 +23,7 @@
         <entry key="app/src/main/res/layout/fragment_work.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_work_experiance.xml" value="0.24791666666666667" />
         <entry key="app/src/main/res/layout/fragment_work_new.xml" value="0.3541666666666667" />
+        <entry key="app/src/main/res/layout/layout_dialogue.xml" value="0.32760416666666664" />
         <entry key="app/src/main/res/layout/main_activity.xml" value="0.21822916666666667" />
         <entry key="app/src/main/res/layout/reusable.xml" value="0.36666666666666664" />
         <entry key="app/src/main/res/layout/reusable_card_layout.xml" value="0.196875" />

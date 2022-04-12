@@ -1,16 +1,22 @@
 package com.miu.aalemu.personal_cv.ui.main
 
+import android.content.Context
 import android.os.Bundle
 import android.view.ContextMenu
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
+import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.miu.aalemu.personal_cv.R
+import com.miu.aalemu.personal_cv.data.CommonData
+import com.miu.aalemu.personal_cv.databinding.LayoutDialogueBinding
 import com.miu.aalemu.personal_cv.util.getDataFromJson
+import com.miu.aalemu.personal_cv.util.getJsonDataFromAsset
 import kotlinx.android.synthetic.main.fragment_work.*
 import kotlinx.android.synthetic.main.fragment_work.view.*
 
@@ -70,7 +76,40 @@ class Work : Fragment() {
             //registerForContextMenu(recycler_view2)
         }
 
+        fab.setOnClickListener{
+            Toast.makeText(context,"thksjdadfsa",Toast.LENGTH_LONG).show()
+            showCustomDialog(requireContext())
+        }
+
     }
+
+    private fun showCustomDialog(context: Context) {
+        val dialogBinding: LayoutDialogueBinding? =
+            DataBindingUtil.inflate(
+                LayoutInflater.from(context),
+                R.layout.layout_dialogue,
+                null,
+                false
+            )
+
+        val customDialog = AlertDialog.Builder(context, 0).create()
+
+        customDialog.apply {
+            setView(dialogBinding?.root)
+            setCancelable(false)
+        }.show()
+
+        dialogBinding?.btnOk?.setOnClickListener {
+            val currentData:ArrayList<CommonData> = getDataFromJson(context,"common") as ArrayList<CommonData>
+            currentData.add(CommonData("111","Then new data","the new detail is here","the new footer",2))
+            recycler_view2.apply {
+                layoutManager = LinearLayoutManager(activity)
+                adapter = RecyclerAdapter(currentData, 2)
+                customDialog.dismiss()
+            }
+        }
+    }
+
 
 //    override fun onCreateContextMenu(
 //        menu: ContextMenu,
