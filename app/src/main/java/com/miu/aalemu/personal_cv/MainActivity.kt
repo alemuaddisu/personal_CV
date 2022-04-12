@@ -1,13 +1,16 @@
 package com.miu.aalemu.personal_cv
 
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.webkit.WebViewClient
 import android.widget.ImageView
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.google.android.material.tabs.TabLayoutMediator
@@ -85,4 +88,25 @@ class MainActivity : AppCompatActivity() {
         webView.webViewClient = WebViewClient()
         webView.loadUrl("" + imgView.contentDescription)
     }
+
+//    private fun showCustomDialog() {
+//        val dialogBinding: LayCustomDialogBinding? =
+//            DataBindingUtil.inflate(
+//                LayoutInflater.from(this),
+//                R.layout.lay_custom_dialog,
+//                null,
+//                false
+//            )
+//
+//        val customDialog = AlertDialog.Builder(this, 0).create()
+//
+//        customDialog.apply {
+//            setView(dialogBinding?.root)
+//            setCancelable(false)
+//        }.show()
+//
+//        dialogBinding?.btnOk?.setOnClickListener {
+//            customDialog.dismiss()
+//        }
+//    }
 }

@@ -70,7 +70,15 @@
     <string name="contact_me">Contact Me ...</string>
     <string name="location">G2O, IT Services and IT Consulting Dublin, OH</string>
     <string name="email_t">email</string>
+
     <string name="register_tittle">Create account</string>
+    <string name="dialogue_title">Add to Technical Skill</string>
+
+
+    <string name="ok">Add</string>
+    <string name="new_title">Title</string>
+    <string name="new_detail">Detail</string>
+    <string name="new_footer">footer</string>
 
 
 </resources>
